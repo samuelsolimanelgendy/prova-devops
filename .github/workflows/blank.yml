@@ -40,7 +40,7 @@ jobs:
       #   run: npm run build
 
       - name: Saves time to a file
-        run: echo $(time) > time.txt
+        run: echo "$(time)" > time.txt
 
       - uses: actions/upload-artifact@v4
         with:
